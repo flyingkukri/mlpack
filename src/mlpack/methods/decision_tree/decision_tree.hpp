@@ -485,6 +485,12 @@ class DecisionTree :
    */
   size_t NumClasses() const;
 
+  /*
+   * Get the classProbabilities vector.
+   */
+  arma::vec getClassProbabilities() const { return classProbabilities; }
+
+
  private:
   //! The vector of children.
   std::vector<DecisionTree*> children;
